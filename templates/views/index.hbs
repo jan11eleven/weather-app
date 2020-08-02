@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="/css/styles.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather app</title>
+    <script src="/js/app.js" defer></script>
+  </head>
+  <body>
+    {{>header}}
+    
+      <main>
+        <form>
+          <div class="title">
+            <h4>Check your weather using this app!</h4>
+          </div>
+          <div class="weather-outputs">
+            <h5>Enter your location to start :DD</h5>
+            <h6></h6>
+          </div>
+          <div class="search-container">
+            <div class="search-inputs">
+              <input class="searchBar" placeholder="Your location.." type="text" name="search" id="" autocomplete="off">
+              <button class="searchSubmit"><img src="/imgs/icon_search.png" alt=""></button>
+            </div>
+          </div>
+        </form>
+      </main>
+    
+    {{>footer}}
+  </body>
+</html>

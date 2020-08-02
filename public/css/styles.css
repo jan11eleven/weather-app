@@ -1,0 +1,155 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.header {
+  height: 70px;
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px;
+  margin: 0 auto;
+}
+.header h1 {
+  color: #14abda;
+  font-size: 26px;
+}
+.header ul {
+  width: 200px;
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+}
+.header ul li a {
+  text-decoration: none;
+  color: #373737;
+  text-transform: capitalize;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%);
+  height: 70px;
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  color: #a5a5a5;
+  font-size: 14px;
+  border-top: 1px solid #4578e4;
+}
+
+main {
+  display: flex;
+  height: calc(100vh - 140px);
+  align-items: center;
+  justify-content: center;
+}
+
+/* index form */
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 300px;
+  width: 80%;
+}
+
+form .title {
+  flex: 1;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  color: #373737;
+}
+
+form .weather-outputs {
+  flex: 1;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+form .weather-outputs h6,
+form .weather-outputs h5 {
+  margin: 5px 0;
+  color: #4578e4;
+}
+
+.weather-outputs h5 {
+  font-size: 16px;
+}
+
+.weather-outputs h6 {
+  font-size: 14px;
+}
+
+form .search-container {
+  flex: 1;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.search-inputs {
+  height: 30px;
+  width: 300px;
+  position: absolute;
+}
+
+.searchBar {
+  height: 40px;
+  width: 100%;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  padding: 5px 20px;
+  font-size: 16px;
+  background-color: rgb(203, 220, 247);
+  color: #505050;
+}
+
+.searchBar:active {
+  box-shadow: 0px 0px 8px 1px rgb(132, 173, 234);
+}
+
+.searchBar:hover {
+  box-shadow: 0px 0px 8px 1px rgb(132, 173, 234);
+}
+
+.searchBar:focus {
+  box-shadow: 0px 0px 8px 1px rgb(132, 173, 234);
+}
+
+.searchSubmit {
+  height: 40px;
+  width: 50px;
+  position: relative;
+  top: -40px;
+  right: -250px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  color: white;
+  outline: none;
+}
+
+.searchSubmit img {
+  height: 15px;
+  width: 15px;
+}
