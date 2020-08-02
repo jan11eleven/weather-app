@@ -9,17 +9,15 @@ searchSubmit.addEventListener('click', (e) => {
 
   h5.innerHTML = 'Loading...';
   h6.innerHTML = '';
-  fetch('http://localhost:3000/weather?address=' + searchBar.value).then(
-    (response) => {
-      response.json().then((data) => {
-        if (data.error) {
-          h5.innerHTML = data.error;
-          h6.innerHTML = '';
-        } else {
-          h5.innerHTML = data.forecast;
-          h6.innerHTML = data.location;
-        }
-      });
-    }
-  );
+  fetch('/weather?address=' + searchBar.value).then((response) => {
+    response.json().then((data) => {
+      if (data.error) {
+        h5.innerHTML = data.error;
+        h6.innerHTML = '';
+      } else {
+        h5.innerHTML = data.forecast;
+        h6.innerHTML = data.location;
+      }
+    });
+  });
 });
