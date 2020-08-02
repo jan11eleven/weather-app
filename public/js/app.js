@@ -1,7 +1,6 @@
 const h5 = document.querySelector('h5');
 const h6 = document.querySelector('h6');
 
-console.log('test git');
 const searchSubmit = document.querySelector('.searchSubmit');
 const searchBar = document.querySelector('.searchBar');
 
