@@ -33,8 +33,8 @@ app.get('/about', (req, res) => {
   });
 });
 
-app.get('/help', (req, res) => {
-  res.render('help', {
+app.get('/contact', (req, res) => {
+  res.render('contact', {
     title: 'Contact me',
     name: 'Jan Eleven',
     address: 'Marikina City',
@@ -82,7 +82,7 @@ app.get('/products', (req, res) => {
   });
 });
 
-app.get('/help/*', (req, res) => {
+app.get('/contact/*', (req, res) => {
   res.render('errorPage', {
     title: 'Help article not found',
     name: 'Onse',
