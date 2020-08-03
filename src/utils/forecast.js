@@ -12,6 +12,7 @@ const forecast = (lat, long, callback) => {
       temperature,
       feelslike,
       weather_descriptions: weather,
+      humidity,
     } = response.body.current;
     if (error) {
       callback('Unable to connect!', undefined);
@@ -20,7 +21,7 @@ const forecast = (lat, long, callback) => {
     } else {
       callback(
         undefined,
-        `${weather[0]}. It is currently ${temperature} (°C) degrees  out. It feels like ${feelslike} degrees out.`
+        `${weather[0]}. It is currently ${temperature} (°C) degrees  out. It feels like ${feelslike} degrees out. The humidity is ${humidity}%.`
       );
     }
   });

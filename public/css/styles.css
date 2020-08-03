@@ -53,6 +53,7 @@ main {
   height: calc(100vh - 140px);
   align-items: center;
   justify-content: center;
+  flex-direction: column;
 }
 
 /* index form */
